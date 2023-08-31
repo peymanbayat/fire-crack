@@ -10,7 +10,8 @@ from PIL import Image
 def load_model():
     
 ###model = torch.hub.load('ultralytics/yolov5','custom',path="weights/last.pt",force_reload=True)
-model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
+#model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
+model = torch.hub.load('ultralytics/yolov5', 'custom', 'yolov5m-seg.pt')
     return model
 
 demo_img = "6.png"
