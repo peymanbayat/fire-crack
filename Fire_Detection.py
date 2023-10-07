@@ -13,16 +13,9 @@ from tensorflow.keras.models import load_model
 @st.cache_resource
 def load_model():
     
-#   model = torch.hub.load('my_model.h5','custom',path="weights/best.pt",force_reload=True)
-#   return model
+   model = torch.hub.load('my_model.h5','custom',path="weights/best.pt",force_reload=True)
+   return model
 
-def cal_confi(State):
-  global event_sum
-  data = pd.read_csv("weights_data/Data.csv")                           
-  df = pd.DataFrame(data)
-  loc_state = df.loc[df['State'] == State] 
-  event = np.array(loc_state)
-  event_sum = (event[0][1]+event[0][2])
 
 demo_img = "6.png"
 demo_video = "melting metals.mp4"
