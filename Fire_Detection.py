@@ -13,7 +13,7 @@ from tensorflow.keras.models import load_model
 @st.cache_resource
 def load_model():
     
-   model = torch.hub.load('my_model.h5')
+   model = torch.hub.load('Apress/Deep-Learning-Apps-Using-Python/blob/master/Chapter6_Regression%20to%20MLP%20in%20Keras/my_model.h5')
    return model
 
 
