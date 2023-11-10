@@ -95,7 +95,7 @@ if app_mode == 'Run on Video':
         length = len(results.xyxy[0])
         output = np.squeeze(results.render())
        # text.write(f"<h1 style='text-align: center; color:blue;'>{length}</h1>",unsafe_allow_html = True)
-       # stframe.image(output)
+        stframe.image(output)
         
 if app_mode == 'Run on WebCam':
     st.subheader("No. of Required Oxygen Valve(s):")
