@@ -55,7 +55,9 @@ if app_mode == 'About App':
 """)   
 
 if app_mode == 'Run on Image':
-   url = "https://crackdetectiontransferedlearning-qhzbg0anx2.streamlit.app/"    
+   url = "https://crackdetectiontransferedlearning-qhzbg0anx2.streamlit.app/"
+   st.write("check out this [link](%s)" % url)
+   st.markdown("check out this [link](%s)" % url)
     
 if app_mode == 'Run on Video':
     st.subheader("No. of Required Oxygen Valve(s):")
