@@ -12,7 +12,7 @@ def load_model():
     return model
 
 demo_img = "6.png"
-demo_video = "melting metals.mp4"
+demo_video = "Product Demonstration.mp4"
 
 st.title('Crack Recognition Solution')
 st.sidebar.title('App Mode')
