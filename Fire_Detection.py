@@ -4,18 +4,12 @@ import numpy as np
 import av
 import torch
 import tempfile
-import tensorflow as tf
-from tensorflow import keras
 from PIL import Image
-from tensorflow.keras.models import load_model
-
 
 @st.cache_resource
 def load_model():
-    
-   model = torch.hub.load('https://github.com/zaid-24/Crack-Detection-using-CNN')
-   return model
-
+    model = torch.hub.load('ultralytics/yolov5','custom',path="weights/last.pt",force_reload=True)
+    return model
 
 demo_img = "6.png"
 demo_video = "melting metals.mp4"
