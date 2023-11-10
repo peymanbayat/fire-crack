@@ -93,7 +93,7 @@ if app_mode == 'Run on Video':
         model = load_model()
         results = model(frame)
         length = len(results.xyxy[0])
-       # output = np.squeeze(results.render())
+        output = np.squeeze(results.render())
        # text.write(f"<h1 style='text-align: center; color:blue;'>{length}</h1>",unsafe_allow_html = True)
        # stframe.image(output)
         
