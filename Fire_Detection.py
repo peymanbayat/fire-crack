@@ -55,29 +55,7 @@ if app_mode == 'About App':
 """)   
 
 if app_mode == 'Run on Image':
-    st.subheader("No. of Required Oxygen Valve(s):")
-    text = st.markdown("")
-    
-    st.sidebar.markdown("---")
-    # Input for Image
-    img_file = st.sidebar.file_uploader("Upload an Image",type=["jpg","jpeg","png"])
-    if img_file:
-        image = np.array(Image.open(img_file))
-    else:
-        image = np.array(Image.open(demo_img))
-        
-    st.sidebar.markdown("---")
-    st.sidebar.markdown("**Original Image**")
-    st.sidebar.image(image)
-    
-    # predict the image
-    model = load_model()
-    results = model(image)
-    length = len(results.xyxy[0])
-    output = np.squeeze(results.render())
-    text.write(f"<h1 style='text-align: center; color:blue;'>{length}</h1>",unsafe_allow_html = True)
-    st.subheader("Output Image ")
-    st.image(output,use_column_width=True)
+   url = "https://crackdetectiontransferedlearning-qhzbg0anx2.streamlit.app/"    
     
 if app_mode == 'Run on Video':
     st.subheader("No. of Required Oxygen Valve(s):")
