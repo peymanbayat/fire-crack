@@ -60,12 +60,12 @@ if app_mode == 'Run on Image':
 #   st.markdown("check out this [link](%s)" % url)
     
 if app_mode == 'Run on Video':
-    st.subheader("No. of Required Oxygen Valve(s):")
+    st.subheader("Detected Cracks:")
     text = st.markdown("")
     
     st.sidebar.markdown("---")
     
-    st.subheader("Output Image ")
+    st.subheader("Output Video ")
     stframe = st.empty()
     
     #Input for Video
