@@ -14,7 +14,7 @@ def load_model():
 demo_img = "6.png"
 demo_video = "melting metals.mp4"
 
-st.title('BurnHancer')
+st.title('Crack Recognition Solution')
 st.sidebar.title('App Mode')
 
 
